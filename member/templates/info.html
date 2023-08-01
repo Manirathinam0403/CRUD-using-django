@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Info of students</title>
+</head>
+<body>
+<h1>Student</h1>
+
+<table border="1">
+{% for x in myMember %}
+<tr>
+<td>{{ x.id }}</td>
+<td>{{ x.registerId }}</td>
+<td>{{ x.name }}</td>
+<td> <a href="moreInfo/{{x.id}}">Details</a> </td>
+<td> <a href="deleteIt/{{x.id}}">Delete </a> </td>
+<td> <a href="update/{{x.id}}">Update</a> </td>
+</tr>
+{% endfor %}
+</table>
+<a href="add/">Add member</a>
+<br>
+<a href="/">Back to home</a>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add record</title>
+</head>
+<body>
+<h2>Add record </h2>
+<form method="post" action="addrecord/">
+  {% csrf_token %}
+  Id : <br>
+  <input name="id" type="number">
+  <br><br>
+  Name : <br>
+  <input name="name" type="text">
+  <br><br>
+  Age : <br>
+  <input name="age" type="number">
+  <br><br>
+  Course : <br>
+  <input name="course" type="text">
+  <br><br>
+  CGPA : <br>
+  <input name="cgpa" type="number">
+  <br><br>
+  <input type="submit" name="Click">
+</form>
+<a href="/details"> Back </a>
+</body>
+</html>
